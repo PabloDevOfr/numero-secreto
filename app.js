@@ -1,6 +1,6 @@
 //https://jogonumero-alpha.vercel.app/
 let listaDeNumerosSorteados = [];
-let numeroLimite = 100;
+let numeroLimite = 50;
 let nuemroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -41,7 +41,7 @@ function gerarNumeroAleatorio() {
     let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
     
-    if (quantidadeDeElementosNaLista == 100) {
+    if (quantidadeDeElementosNaLista == 50) {
         listaDeNumerosSorteados = [];
     }
     if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
